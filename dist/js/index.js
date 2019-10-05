@@ -123,12 +123,6 @@ asyncGetSkillsData()
     ())
   .catch(error => console.error(error));
 
-
-
-
-
-
-
 /*
  *  yoda quotes 
  */
