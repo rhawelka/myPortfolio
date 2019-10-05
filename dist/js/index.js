@@ -22,7 +22,7 @@ let cityGameImagesArr;
 let legoSetsImagesArr;
 
 async function asyncGetImages() {
-  const response = await fetch('http://localhost:3306/Portfolio/dist/JsonData/imagesSrc.json');
+  const response = await fetch('./dist/JsonData/imagesSrc.json');
   const json = await response.json();
   return json;
 }
@@ -133,7 +133,7 @@ asyncGetSkillsData()
  *  yoda quotes 
  */
 async function asyncGetYodaQuotes() {
-  const response = await fetch('http://localhost:5500/Portfolio/dist/JsonData/yodaQuotes.json');
+  const response = await fetch('./dist/JsonData/yodaQuotes.json');
   const json = await response.json();
   return json;
 }
