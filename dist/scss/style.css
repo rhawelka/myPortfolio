@@ -124,7 +124,7 @@ body .container .nav__bar {
 }
 
 body .container .nav__bar--img {
-  background-image: ("../img/main/0.jpg");
+  background-image: url("../img/main/0.jpg");
   height: 150px;
   background-size: 75%;
   background-position: center;
