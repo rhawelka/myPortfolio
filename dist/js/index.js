@@ -22,7 +22,7 @@ let cityGameImagesArr;
 let legoSetsImagesArr;
 
 async function asyncGetImages() {
-  const response = await fetch('http://localhost:5500/Portfolio/dist/JsonData/imagesSrc.json');
+  const response = await fetch('http://localhost:3306/Portfolio/dist/JsonData/imagesSrc.json');
   const json = await response.json();
   return json;
 }
@@ -94,7 +94,7 @@ function setModalToCityGameImages(cityGameImages) {
  */
 
 async function asyncGetSkillsData() {
-  const response = await fetch('http://localhost:5500/Portfolio/dist/JsonData/experience.json');
+  const response = await fetch('./dist/JsonData/experience.json');
   const json = await response.json();
   return json;
 }
