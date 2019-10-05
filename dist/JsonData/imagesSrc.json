@@ -1,53 +1,53 @@
 {
     "legoSetsImages": [{
             "name": "anakinSebulba",
-            "source": "/Portfolio/dist/img/hobby/anakinSebulba.jpg"
+            "source": "./dist/img/hobby/anakinSebulba.jpg"
         }, {
             "name": "aTTe",
-            "source": "/Portfolio/dist/img/hobby/atTe.jpg"
+            "source": "./dist/img/hobby/atTe.jpg"
         },
         {
             "name": "destroyerATST",
-            "source": "/Portfolio/dist/img/hobby/destroyerATST.jpg"
+            "source": "./dist/img/hobby/destroyerATST.jpg"
         },
         {
             "name": "kRenoFigter",
-            "source": "/Portfolio/dist/img/hobby/kRenoFigter.jpg"
+            "source": "./dist/img/hobby/kRenoFigter.jpg"
         },
         {
             "name": "mileniumFalcon",
-            "source": "/Portfolio/dist/img/hobby/mileniumFalcon.jpg"
+            "source": "./dist/img/hobby/mileniumFalcon.jpg"
         },
         {
             "name": "tieFigter",
-            "source": "/Portfolio/dist/img/hobby/tieFigter.jpg"
+            "source": "./dist/img/hobby/tieFigter.jpg"
         },
         {
             "name": "xWing",
-            "source": "/Portfolio/dist/img/hobby/xWing.jpg"
+            "source": "./dist/img/hobby/xWing.jpg"
         }
     ],
 
     "cityGameImages": [{
         "name": "cityGamePhoto",
-        "source": "/Portfolio/dist/img/cityGame/4.JPG"
+        "source": "./dist/img/cityGame/4.JPG"
     }, {
         "name": "cityGamePhoto",
-        "source": "/Portfolio/dist/img/cityGame/5.JPG"
+        "source": "./dist/img/cityGame/5.JPG"
     }, {
         "name": "cityGamePhoto",
-        "source": "/Portfolio/dist/img/cityGame/Capture2.JPG"
+        "source": "./dist/img/cityGame/Capture2.JPG"
     }, {
         "name": "cityGamePhoto",
-        "source": "/Portfolio/dist/img/cityGame/Capture3.JPG"
+        "source": "./dist/img/cityGame/Capture3.JPG"
     }, {
         "name": "cityGamePhoto",
-        "source": "/Portfolio/dist/img/cityGame/webPAge.JPG"
+        "source": "./dist/img/cityGame/webPAge.JPG"
     }, {
         "name": "cityGamePhoto",
-        "source": "/Portfolio/dist/img/cityGame/gameList.JPG"
+        "source": "./dist/img/cityGame/gameList.JPG"
     }, {
         "name": "cityGamePhoto",
-        "source": "/Portfolio/dist/img/cityGame/loginPage.JPG"
+        "source": "./dist/img/cityGame/loginPage.JPG"
     }]
 }
