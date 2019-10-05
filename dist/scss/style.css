@@ -124,7 +124,7 @@ body .container .nav__bar {
 }
 
 body .container .nav__bar--img {
-  background-image: url("myPortfolio/dist/img/main/0.jpg");
+  background-image: ("../img/main/0.jpg");
   height: 150px;
   background-size: 75%;
   background-position: center;
@@ -1040,22 +1040,22 @@ body .container .page .bg0 {
   background-color: black;
   vertical-align: middle;
   text-align: center;
-  background-image: url("myPortfolio/dist/img/main/priv1.jpg");
+  background-image: url("../img/main/priv1.jpg");
   background-size: 35%;
 }
 
 body .container .page .bg1 {
-  background-image: url("myPortfolio/dist/img/main/lego1.jpg");
+  background-image: url("../img/main/lego1.jpg");
 }
 
 body .container .page .bg2 {
-  background-image: url("myPortfolio/dist/img/main/lego2.jpg");
+  background-image: url("../img/main/lego2.jpg");
 }
 
 body .container .page .bg3 {
-  background-image: url("myPortfolio/dist/img/main/lego4.jpg");
+  background-image: url("../img/main/lego4.jpg");
 }
 
 body .container .page .bg4 {
-  background-image: url("myPortfolio/dist/img/main/lego3.jpg");
+  background-image: url("../img/main/lego3.jpg");
 }
