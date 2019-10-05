@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./dist/css/starwars-glyphicons.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="./dist/scss/style.css">
+    <script src="./dist/js/nonResponsivePage.js" async></script> 
+</head>
+
+<body>
+
+    <div class="containerNonResponisivePage">
+        <img src="./dist/img/fk.jpg" alt="">
+        <p>poprawiam aktualnie RWD portfolio</p>
+        <p>za uniedogodnienia przepraszam</p>
+        <p>proszę oglądać w większej rozdzielczości</p>
+    </div>
+    <div class="container">
+
+        <div class="column">
+
+
+            <div class="nav">
+                <div class="nav__bar">
+                    <a href="#home" class="nav__bar--link nav__bar--img"></a>
+                    <a href="#aboutMe" class="nav__bar--link">jedi</a>
+                    <a href="#skills" class="nav__bar--link">moce</a>
+                    <a href="#experience" class="nav__bar--link">Exp.</a>
+                    <a href="#projects" class="nav__bar--link">projekty</a>
+                    <a href="#contactFooter" class="nav__bar--link">kontakt</a>
+                </div>
+            </div>
+            <button class="toTopButton" title="Go to top"><i class="swg swg-falcon-2 [&#f047;]"></i></button>
+
+
+            <div class="page">
+                <div class="section bg0" id="home">
+                    <header class="section__headerC3PO"><span class="section__headerC3PO--arrows">
+                            <div class="arrowSliding"><i class="arrow right"></i></div>
+
+                            <div class="arrowSliding delay1"><i class="arrow right"></i></div>
+                            <div class="arrowSliding delay2"><i class="arrow right"></i></div>
+                            <div class="arrowSliding delay3"><i class="arrow right"></i></div>
+                        </span>
+                        <button class="section__headerC3PO--button" title="About page"><i
+                                class="swg swg-c3po [&#f023;]"></i>
+                            <a class="section__headerC3PO--alert">
+                                <span class="symbol">!</span>
+                            </a></button>
+                    </header>
+
+                    <!-- welcome window -->
+                    <article class="section__modalInfo">
+                        <i class="swg swg-deathstar-4 [&#f01D;]"></i>
+                        <div class="section__modalInfo--content">
+
+                            <span class="modal-close">&times;</span>
+                            <p><strong>czesc</p>
+                            <p>witam na moim portfolio</p>
+                            <p>skad pomysl na taki design?</p>
+                            <p>Lego to jedno z moich hobby,<br> w szczegolnosci upodobalem sobie uniwersum
+                                <br>star
+                                wars</strong></p>
+                            <p>pare z moich setow:</p>
+                            <div class="legoSetsImages">
+                                <a target="blank">
+                                    <img alt="anakin and sebulba speedster" class="legoSet">
+                                </a>
+                                <a target="blank">
+                                    <img alt="AT-TE" class="legoSet">
+                                </a><a target="blank">
+                                    <img alt="destroyer midi scale and AT-ST" class="legoSet">
+                                </a><a target="blank">
+                                    <img alt="Kylo Reno figter" class="legoSet">
+                                </a><a target="blank">
+                                    <img alt="millenium Falcon" class="legoSet">
+                                </a>
+                                <a target="blank">
+                                    <img alt="Tie Figter" class="legoSet">
+                                </a><a target="blank">
+                                    <img alt="X-Wing" class="legoSet">
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="section bg1" id="aboutMe">
+                    <article class="section__article">
+                        <i class="swg swg-jabba [&#f074;] section__article--i icon-to-left"></i>
+                        <div class="article__content margin-left ">
+                            <h2 class="article__content--h">o mnie</h2>
+                            <p class="article__content--p">
+                                Nazywam sie Rafał Hawełka. Od 2017 uczę
+                                sie we własnym zakresie technologii Front-end, na dzień dziejszy przyuczam się
+                                biblioteki
+                                React. Obecnie szukam pracy w której mógłbym rozwijać swoje doświadczenie. Posiadam
+                                bardzo dobre umiejętności komunikacyjne, podczas kontaktu z klientem potrafię dostosować
+                                się do jego wymagań. Jestem również administratorem strony <a
+                                    href="https://krakowkings.org/" target="_blank">Kraków Kings</a>.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="section bg2" id="skills">
+                    <article class="section__article inheritHeight">
+                        <i class="swg swg-yoda-3 [&#f06B;] section__article--i icon-to-left">
+                        </i>
+
+                        <div class="infoAboutSkills">
+                            <div class="lightsaber--label"></div>
+                            <div class="lightsaber--plasma"></div>
+                            <p class="skillDescription"></p>
+                        </div>
+                        <div class="article__content margin-left">
+                            <h2 class="article__content--h">Moce (click)</h2>
+
+                            <!-- SKILLS -->
+                            <div class="article__content--powerList">
+                                <table class="scrollmenu">
+                                    <tr>
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt="html">
+                                        </td>
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt="css">
+                                        </td>
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt="sass">
+                                        </td>
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt="bootstrap">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt="jquery"></td>
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt="JavaScript"></td>
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt="react"></td>
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt="node.js"></td>
+                                    </tr>
+                                    <tr>
+
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt="git"></td>
+                                        <td class="scrollmenu__item"><img class="powerList__img"
+                                                alt="visual studio code"></td>
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt="webpack"></td>
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt="csharp"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt=".net"></td>
+
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt="wordpress"></td>
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt="sql"></td>
+                                        <td class="scrollmenu__item"><img class="powerList__img" alt="java"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="section bg3" id="experience">
+                    <!-- B88 -->
+                    <div class="bb8-container">
+                        <!--
+                                Copyright (c) 2019 by Mike Dixon (https://codepen.io/mdixondesigns/pen/PPEJwz)
+        
+                                Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+                                The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+                                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+                            -->
+
+                        <div class="bb8">
+                            <div class="antennas">
+                                <div class="antenna short"></div>
+                                <div class="antenna long"></div>
+                            </div>
+                            <div class="head">
+                                <div class="stripe one"></div>
+                                <div class="stripe two"></div>
+                                <div class="eyes">
+                                    <div class="eye one"></div>
+                                    <div class="eye two"></div>
+                                </div>
+                                <div class="stripe three"></div>
+                            </div>
+                            <div class="ball">
+                                <div class="lines one"></div>
+                                <div class="lines two"></div>
+                                <div class="ring one"></div>
+                                <div class="ring two"></div>
+                                <div class="ring three"></div>
+                            </div>
+                            <div class="shadow"></div>
+                        </div>
+                    </div>
+                    <article class="section__article">
+                        <i class="swg swg-r2d2-2 [&#f038;] section__article--i icon-to-left"></i>
+                        <div class="article__content margin-left">
+                            <h2 class="article__content--h">Doswiadczenie zawodowe</h2>
+
+                            <div class="expImage" id="salesmanagoImg">
+                                <img src="/Portfolio/dist/img/main/sm.png" alt="salesmanago">
+                            </div>
+
+                            <div id="SMmodal" class="modal2">
+                                <div class="modal-contentExperience SMclose">
+                                    <span class="close2">&times;</span>
+                                    <strong>
+                                        <p>Junior Java Support Specialist</p>
+                                        <p>grudzien 2017 - grudzien 2018</p>
+                                        <p>opis stanowiska: </p>
+                                    </strong>
+                                    <ul>
+                                        <li>wykonywanie customowych zapytań do bazy danych na życzenie klienta</li>
+                                        <li>utrzymywanie dzialania produktu zgodnie z oczekiwaniami klienta</li>
+                                        <li>debugowanie i naprawa bledow aplikacji zarowno po warstwie front-endu i
+                                            back-endu</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="expImage" id="globalLogicImg">
+                                <img src="/Portfolio/dist/img/main/gl.jpg" alt="globalLogic">
+                            </div>
+                            <div id="GLmodal" class="modal2">
+                                <div class="modal-contentExperience GLclose">
+                                    <span class="close2">&times;</span>
+                                    <strong>
+                                        <p>Junior Software Developer</p>
+                                        <p>.NET Summer Academy</p>
+                                        <p>lipiec-sierpien 2019
+                                    </strong></p>
+                                    <p class="GLdescription">Letnia akademia była dwumiesięcznym programem stażystow,
+                                        podzielonym na dwie
+                                        cześci teoretyczne i praktyczne - każda faza trwała miesiąc. Podczas wykonywania
+                                        cwiczeń programistycznych zapoznawalismy się z licznymi technologiami i
+                                        platformami .NET, a także łaczyliśmy je z nowoczesną technologią front-end, taką
+                                        jak Angular. Druga cześć koncentrowała sie na nauce pracy zespołowej i
+                                        metodologii scrum: uczestnicy musieli zastosować wszystkie nabyte umiejętności,
+                                        aby sprostac oczekiwaniom klientów podczas opracowywania aplikacji od podstaw.
+                                    </p>
+                                    <p class="GLdescription">Aplikacja jaką napisalismy wspólnie to "gra miejska". Celem
+                                        gry było wykonanie
+                                        zadań wyznaczonych przez admina gry. Każda gra skladała się z poszczególnych
+                                        questów które można było zaliczac poprzez podanie odpowiedzi zadania lub
+                                        przesłanie zdjecia. Niestety ze wzgledu na politykę firmy nie moge udostepnienić
+                                        kodu na np. github.</p>
+                                    <p class="GLdescription">co ja wniosłem do projektu:</p>
+                                    <ul>
+                                        <li>tworzyłem i edytowałem widoki</li>
+                                        <li>implementowałem web Api w ASP.NET Core</li>
+                                        <li>implementowałem funkcje CRUD z platformą Entity Framework</li>
+                                        <li>tworzyłem uslugi/serwisy do przechowywania logiki aplikacji tu zmien na
+                                            wstrzykiwanie zaleznosaci</li>
+                                    </ul>
+                                    <p>w zakladce projekty zamiescilem pare zdjec z gry ktora tworzyliśmy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="section bg4" id="projects">
+
+                    <article class="section__article">
+                        <i class="swg swg-chewbacca [&#f06C;] section__article--i icon-to-left"></i>
+                        <div class="article__content margin-left">
+                            <h2 class="article__content--h" style="margin-bottom: 0; margin-top: 0">wybrane projekty
+                            </h2>
+
+                            <div class="projectDiv cityGame">
+                                <img src="/Portfolio/dist/img/project/logo_cityGame.png" alt="city game">
+                            </div>
+                            <div class="projectDiv jkm"><a href="https://github.com/rhawelka/JKMgenerator">
+                                    <img src="/Portfolio/dist/img/jkm.jpg" alt=""></a></div>
+                            <div class="projectDiv gielda"><a href="link do github">gielda</a> - consolowa aplikacja
+                                napisana w C#
+                                podczas akademii .NET</div>
+                        </div>
+
+                        <div class="margin-left cityGameImages">
+                            <img src="" alt="" class="cityGameImg">
+                            <img src="" alt="" class="cityGameImg">
+                            <img src="" alt="" class="cityGameImg">
+                            <img src="" alt="" class="cityGameImg">
+                            <img src="" alt="" class="cityGameImg">
+                            <img src="" alt="" class="cityGameImg mobileImg">
+                            <img src="" alt="" class="cityGameImg mobileImg">
+                            <div id="cityGameModal" class="modalCityGame">
+                                <span class="closeCityGame">&times;</span>
+                                <img class="cityGameModal-content" id="imgCG">
+                            </div>
+                        </div>
+                    </article>
+
+                    <footer class="section__footer" id="contactFooter">
+                        <div class="column">
+                            <div class="section__footer--row margin-left">
+                                <div class="row">
+                                    <div class='section__footer--item'>
+                                        <div class="item__column">
+                                            <div class="column">
+                                                <div class="item__column--data"> <a class='data__link'> <i
+                                                            class="swg swg-darthvader"></i></a> Rafal
+                                                    Hawelka</div>
+                                                <div class="item__column--data">
+                                                    <address>
+                                                        <a class='data__link' href="mailto:rafalhawelka@gmail.com">
+                                                            <i class="swg swg-r2d2 [&#f01E;]"></i>
+                                                            rafalhawelka
+                                                            <span style="font-family:Arial">@</span>
+                                                            gmail.com
+                                                        </a>
+                                                    </address>
+                                                </div>
+                                                <div class="item__column--data"><a class='data__link'
+                                                        href="tel:+48513549366"><i
+                                                            class="swg swg-stormtrooper [&#f022;]"></i>513-549-366</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='section__footer--item'>
+                                        <span class="item-text-findMe">znajdz mnie w social mediach</span>
+                                        <div class="social-links row">
+                                            <a href="https://www.facebook.com/profile.php?id=100000853664913"
+                                                target="_blank" class="fa fa-facebook"></a>
+                                            <a href="https://www.linkedin.com/in/rafal-hawelka/" target="_blank"
+                                                class="fa fa-linkedin"></a>
+                                            <a href="https://www.instagram.com/rafal90.pl/" target="_blank"
+                                                class="fa fa-instagram"></a>
+                                            <a href="https://github.com/rhawelka" target="_blank"
+                                                class="fa fa-github"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section__footer--row margin-left">
+                                <p>Rafal Hawelka 2019 &copy; <span class="yodaQuote"></span> - Yoda</p>
+                            </div>
+                        </div>
+
+
+                    </footer>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="./dist/js/index.js" async></script>
+    <script src="./dist/js/bb8.js" async></script>
+
+
+</body>
+
+</html>

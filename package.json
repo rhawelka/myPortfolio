@@ -1,0 +1,39 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio ver.1",
+  "main": "./src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhawelka/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "cv",
+    "resume",
+    "Rafał",
+    "Hawełka"
+  ],
+  "author": "Rafał Hawełka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhawelka/Portfolio/issues"
+  },
+  "homepage": "https://github.com/rhawelka/Portfolio#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "jsdom": "^15.1.1",
+    "ngrok": "^3.2.5"
+  }
+}

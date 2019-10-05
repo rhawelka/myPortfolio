@@ -1,0 +1,1061 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Turret+Road:700&display=swap&subset=latin-ext");
+
+@font-face {
+  font-family: "Starjout";
+  src: url("../fonts/Starjout.ttf");
+}
+
+@font-face {
+  font-family: "Starjedi";
+  src: url("../fonts/Starjedi.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+  background-image: -webkit-linear-gradient(90deg, black 0%, black 25%, transparent 100%, black 75%, transparent);
+}
+
+body .containerNonResponisivePage {
+  display: none;
+  margin-top: 20vh;
+  text-align: center;
+}
+
+body .container {
+  margin: 0 auto;
+}
+
+body .container .toTopButton {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 5%;
+  z-index: 2;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+body .container .toTopButton i {
+  font-size: 10vh;
+  transition: 0.7s ease-out;
+}
+
+body .container .toTopButton i:hover {
+  text-shadow: 0px 0px 15px blue;
+  transform: rotate(-45deg);
+}
+
+body .container .hidden {
+  opacity: 0;
+}
+
+body .container .animation-article {
+  animation-name: articleAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes articleAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body .container .margin-left {
+  margin-left: 25vw;
+  margin-right: 5vh;
+}
+
+body .container .column {
+  display: flex;
+  flex-direction: column;
+}
+
+body .container .row {
+  display: flex;
+  flex-direction: row;
+}
+
+body .container .nav {
+  z-index: 2;
+  overflow: auto;
+  position: absolute;
+  height: 100vh;
+  opacity: 0.9;
+  width: 20vw;
+  font-family: "Starjedi";
+}
+
+body .container .nav__bar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100vh;
+  text-align: center;
+  background-color: black;
+  padding-top: 60px;
+}
+
+body .container .nav__bar--img {
+  background-image: url("/Portfolio/dist/img/main/0.jpg");
+  height: 150px;
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+}
+
+body .container .nav__bar--img:hover {
+  box-shadow: 0px 0px 15px blue;
+}
+
+body .container .nav__bar--link {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: 0.3s;
+  color: white;
+  font-size: 30px;
+  opacity: 0.6;
+  margin: 0 20px;
+}
+
+body .container .nav__bar--link:hover {
+  color: white;
+  opacity: 1;
+}
+
+body .container .page .section {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+body .container .page .section__headerC3PO {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  width: 13vw;
+}
+
+body .container .page .section__headerC3PO--arrows {
+  justify-content: center;
+  align-items: center;
+}
+
+body .container .page .section__headerC3PO--arrows .arrowSliding {
+  animation: slide 4s linear infinite;
+  position: absolute;
+  top: 50%;
+}
+
+body .container .page .section__headerC3PO--arrows .arrowSliding i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 0.5vw;
+}
+
+body .container .page .section__headerC3PO--arrows .arrowSliding i.right {
+  transform: rotate(-45deg);
+}
+
+body .container .page .section__headerC3PO--arrows .delay1 {
+  animation-delay: 1s;
+}
+
+body .container .page .section__headerC3PO--arrows .delay2 {
+  animation-delay: 2s;
+}
+
+body .container .page .section__headerC3PO--arrows .delay3 {
+  animation-delay: 3s;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-13vw);
+  }
+
+  10% {
+    opacity: 0;
+    transform: translateX(-10vw);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-7vw);
+  }
+
+  80% {
+    opacity: 0;
+    transform: translateX(7vw);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(13vw);
+  }
+}
+
+body .container .page .section__headerC3PO--alert {
+  background-color: #fff;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+body .container .page .section__headerC3PO--alert:hover {
+  background-color: red;
+}
+
+body .container .page .section__headerC3PO--alert .symbol {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+body .container .page .section__headerC3PO--button {
+  outline: none;
+  overflow: hidden;
+  background: none;
+  border: none;
+  padding-right: 25px;
+  float: right;
+}
+
+body .container .page .section__headerC3PO--button i {
+  font-size: 10vh;
+  color: white;
+  animation: animatedShadowC3PO 0.8s infinite;
+  animation-direction: alternate;
+  opacity: 0.9;
+}
+
+@keyframes animatedShadowC3PO {
+  from {
+    text-shadow: 3px 3px 12px rgba(211, 193, 28, 0.8);
+    line-height: 10vh;
+  }
+
+  to {
+    text-shadow: 4px 4px 16px rgba(228, 94, 17, 0.2);
+    line-height: 14vh;
+  }
+}
+
+body .container .page .section__headerC3PO--button i:hover {
+  opacity: 1;
+  cursor: pointer;
+  color: white;
+}
+
+body .container .page .section__modalInfo {
+  display: none;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  overflow: auto;
+  background-color: rgba(150, 160, 165, 0.788);
+  font-family: "Starjout";
+}
+
+body .container .page .section__modalInfo i {
+  position: absolute;
+  font-size: 80vh;
+  animation-name: animateDeathStar;
+  animation-duration: 0.9s;
+  top: 10vh;
+}
+
+@keyframes animateDeathStar {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+
+  to {
+    top: 10vh;
+    opacity: 1;
+  }
+}
+
+body .container .page .section__modalInfo--content {
+  border: 6px outset gray;
+  position: relative;
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animateModalContent;
+  animation-duration: 0.8s;
+}
+
+@keyframes animateModalContent {
+  from {
+    right: -200px;
+    opacity: 0;
+  }
+
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+body .container .page .section__modalInfo--content .modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+body .container .page .section__modalInfo--content .modal-close:focus,
+body .container .page .section__modalInfo--content .modal-close:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body .container .page .section__modalInfo--content .legoSetsImages {
+  display: inline-block;
+}
+
+body .container .page .section__modalInfo--content .legoSetsImages .legoSet {
+  margin: 5px;
+  border: 1px solid black;
+  float: left;
+  width: 100px;
+}
+
+body .container .page .section__modalInfo--content .legoSetsImages .legoSet:hover {
+  border: 2px solid #777;
+}
+
+body .container .page .section .bb8-container {
+  overflow: hidden;
+}
+
+body .container .page .section .bb8-container .bb8 {
+  position: absolute;
+  margin-left: -70px;
+  width: 140px;
+  bottom: 0;
+  left: 0;
+}
+
+body .container .page .section .bb8-container .antennas {
+  position: absolute;
+  transition: left 0.6s;
+  left: 22%;
+}
+
+body .container .page .section .bb8-container .antennas.right {
+  left: 0%;
+}
+
+body .container .page .section .bb8-container .antenna {
+  background: #e0d2be;
+  position: absolute;
+  width: 2px;
+}
+
+body .container .page .section .bb8-container .antenna.short {
+  height: 20px;
+  top: -60px;
+  left: 50px;
+}
+
+body .container .page .section .bb8-container .antenna.long {
+  border-top: 6px solid #020204;
+  border-bottom: 6px solid #020204;
+  height: 36px;
+  top: -78px;
+  left: 56px;
+}
+
+body .container .page .section .bb8-container .head {
+  background: #e0d2be;
+  border-radius: 90px 90px 14px 14px;
+  -moz-border-radius: 90px 90px 14px 14px;
+  -webkit-border-radius: 90px 90px 14px 14px;
+  height: 56px;
+  margin-left: -45px;
+  overflow: hidden;
+  position: absolute;
+  width: 90px;
+  z-index: 1;
+  top: -46px;
+  left: 50%;
+}
+
+body .container .page .section .bb8-container .head .stripe {
+  position: absolute;
+  width: 100%;
+}
+
+body .container .page .section .bb8-container .head .stripe.one {
+  background: #999;
+  height: 6px;
+  opacity: 0.8;
+  z-index: 1;
+  top: 6px;
+}
+
+body .container .page .section .bb8-container .head .stripe.two {
+  background: #CD7640;
+  height: 4px;
+  top: 17px;
+}
+
+body .container .page .section .bb8-container .head .stripe.three {
+  background: #999;
+  height: 4px;
+  opacity: 0.5;
+  bottom: 3px;
+}
+
+body .container .page .section .bb8-container .head .eyes {
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  transition: left 0.6s;
+  left: 0%;
+}
+
+body .container .page .section .bb8-container .head .eyes.right {
+  left: 36%;
+}
+
+body .container .page .section .bb8-container .head .eye {
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+body .container .page .section .bb8-container .head .eye.one {
+  background: #020204;
+  border: 4px solid #e0d2be;
+  height: 30px;
+  width: 30px;
+  top: 12px;
+  left: 12%;
+}
+
+body .container .page .section .bb8-container .head .eye.one:after {
+  background: white;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  width: 3px;
+  top: 4px;
+  right: 4px;
+}
+
+body .container .page .section .bb8-container .head .eye.two {
+  background: #e0d2be;
+  border: 1px solid #020204;
+  height: 16px;
+  width: 16px;
+  top: 30px;
+  left: 50%;
+}
+
+body .container .page .section .bb8-container .head .eye.two:after {
+  background: #020204;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  top: 2px;
+  left: 2px;
+}
+
+body .container .page .section .bb8-container .ball {
+  background: #d1c3ad;
+  border-radius: 50%;
+  height: 140px;
+  overflow: hidden;
+  position: relative;
+  width: 140px;
+}
+
+body .container .page .section .bb8-container .lines {
+  border: 2px solid #B19669;
+  border-radius: 50%;
+  height: 400px;
+  opacity: 0.6;
+  position: absolute;
+  width: 400px;
+}
+
+body .container .page .section .bb8-container .lines.two {
+  top: -10px;
+  left: -250px;
+}
+
+body .container .page .section .bb8-container .ring {
+  background: #CD7640;
+  border-radius: 50%;
+  height: 70px;
+  margin-left: -35px;
+  position: absolute;
+  width: 70px;
+}
+
+body .container .page .section .bb8-container .ring:after {
+  background: #d1c3ad;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 70%;
+  margin-top: -35%;
+  margin-left: -35%;
+  position: absolute;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+}
+
+body .container .page .section .bb8-container .ring.one {
+  margin-left: -40px;
+  height: 80px;
+  width: 90px;
+  top: 6%;
+  left: 50%;
+}
+
+body .container .page .section .bb8-container .ring.two {
+  height: 38px;
+  width: 76px;
+  -ms-transform: rotate(36deg);
+  -webkit-transform: rotate(36deg);
+  transform: rotate(36deg);
+  top: 70%;
+  left: 18%;
+}
+
+body .container .page .section .bb8-container .ring.two:after {
+  top: 100%;
+}
+
+body .container .page .section .bb8-container .ring.three {
+  height: 30px;
+  -ms-transform: rotate(-50deg);
+  -webkit-transform: rotate(-50deg);
+  transform: rotate(-50deg);
+  top: 66%;
+  left: 90%;
+}
+
+body .container .page .section .bb8-container .ring.three:after {
+  top: 110%;
+}
+
+body .container .page .section__article {
+  min-height: 35vh;
+  background-color: white;
+  opacity: 0.8;
+  margin-top: 0;
+  padding: 10px;
+  padding-bottom: 5vh;
+  position: relative;
+  overflow: hidden;
+  font-family: Arial;
+  font-weight: 400;
+  transition: 2s ease-in-out;
+  border: 2px solid black;
+}
+
+body .container .page .section__article.inheritHeight {
+  height: inherit;
+  max-height: 70vh;
+}
+
+body .container .page .section__article .infoAboutSkills {
+  position: absolute;
+  min-height: 25vh;
+  min-width: 30vw;
+  left: 20%;
+  top: 50%;
+  margin-right: 5px;
+  font-family: starjedi;
+}
+
+body .container .page .section__article .infoAboutSkills .lightsaber--label {
+  cursor: pointer;
+  height: 15px;
+  width: 15%;
+  border-left: solid 4px black;
+  border-right: solid 5px black;
+  border-radius: 5px;
+  background-color: #4d4949;
+  float: left;
+}
+
+body .container .page .section__article .infoAboutSkills .lightsaber--plasma {
+  height: 15px;
+  width: 0;
+  transition: 2s;
+  overflow: hidden;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+body .container .page .section__article .infoAboutSkills .skillDescription {
+  clear: both;
+}
+
+body .container .page .section__article--i {
+  position: absolute;
+  background: none;
+  font-size: 30vh;
+  line-height: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  right: 50%;
+  top: 10%;
+  transition: 0.8s ease-in;
+  z-index: 1;
+}
+
+body .container .page .section__article--i.icon-to-left {
+  left: 25%;
+  height: 0px;
+  margin-right: 20px;
+}
+
+body .container .page .section__article--i:hover {
+  text-shadow: 0px 0px 15px blue;
+  opacity: 0.9;
+}
+
+body .container .page .section__article .article__content {
+  position: absolute;
+  width: 50%;
+  right: 0;
+}
+
+body .container .page .section__article .article__content--p {
+  font-family: "Turret Road", cursive;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+body .container .page .section__article .article__content--p a {
+  text-decoration: none;
+  color: black;
+}
+
+body .container .page .section__article .article__content--p a:hover {
+  color: gray;
+}
+
+body .container .page .section__article .article__content .projectDiv {
+  width: 25%;
+  padding: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 5px;
+  height: 15vh;
+  object-fit: fill;
+  overflow: hidden;
+  border: 1px solid black;
+  box-shadow: 5px 10px #888888;
+}
+
+body .container .page .section__article .article__content .projectDiv:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+body .container .page .section__article .article__content .projectDiv img {
+  width: 100%;
+  height: 100%;
+}
+
+body .container .page .section__article .article__content .projectDiv a {
+  text-decoration: none;
+  font-family: "Starjedi";
+  color: black;
+}
+
+body .container .page .section__article .article__content .modal2 {
+  display: none;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 30;
+  overflow: auto;
+  background-color: rgba(150, 160, 165, 0.788);
+  font-family: "Starjout";
+  opacity: 1;
+}
+
+body .container .page .section__article .article__content .modal2 .modal-contentExperience {
+  border: 6px outset gray;
+  position: relative;
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  padding-bottom: 100px;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animateModalContent;
+  animation-duration: 0.8s;
+}
+
+body .container .page .section__article .article__content .modal2 .modal-contentExperience ul,
+body .container .page .section__article .article__content .modal2 .modal-contentExperience .GLdescription {
+  font-family: "Turret Road", cursive;
+  font-size: 20px;
+}
+
+body .container .page .section__article .article__content .modal2 .modal-contentExperience .close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+body .container .page .section__article .article__content .modal2 .modal-contentExperience .close2:hover,
+body .container .page .section__article .article__content .modal2 .modal-contentExperience .close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body .container .page .section__article .article__content .expImage {
+  margin-left: 1vw;
+  margin-right: 3vw;
+  display: inline-block;
+  border: 2px solid black;
+  height: 25vh;
+  cursor: pointer;
+  margin-bottom: 20px;
+  position: relative;
+  box-shadow: 5px 10px #888888;
+}
+
+body .container .page .section__article .article__content .expImage:hover {
+  opacity: 0.7;
+  box-shadow: none;
+}
+
+body .container .page .section__article .article__content .expImage img {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+body .container .page .section__article .article__content--h {
+  font-family: "Starjedi";
+  margin-bottom: 10px;
+}
+
+body .container .page .section__article .article__content--powerList {
+  padding-bottom: 5vh;
+}
+
+body .container .page .section__article .article__content--powerList .scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  background: none;
+  padding: 20px;
+}
+
+body .container .page .section__article .article__content--powerList .scrollmenu:hover {
+  cursor: pointer;
+}
+
+body .container .page .section__article .article__content--powerList .scrollmenu::-webkit-scrollbar-thumb:horizontal {
+  background: #000;
+  border-radius: 10px;
+}
+
+body .container .page .section__article .article__content--powerList .scrollmenu::-webkit-scrollbar {
+  height: 10px;
+  width: 4px;
+  background: lightgray;
+}
+
+body .container .page .section__article .article__content--powerList .scrollmenu table {
+  border: none;
+}
+
+body .container .page .section__article .article__content--powerList .scrollmenu__item {
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+  width: 8vw;
+  height: 80%;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+body .container .page .section__article .article__content--powerList .scrollmenu__item .powerList__img {
+  width: 80%;
+  max-height: 80%;
+  margin-bottom: 25px;
+}
+
+body .container .page .section__article .article__content--powerList .scrollmenu__item:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+body .container .page .section__article .cityGameImages {
+  display: none;
+  height: 100px;
+  bottom: 10%;
+  position: absolute;
+  right: 0;
+  left: 20%;
+  width: 50%;
+}
+
+body .container .page .section__article .cityGameImages.active {
+  display: flex;
+}
+
+body .container .page .section__article .cityGameImages .cityGameImg {
+  overflow: hidden;
+  transition: transform 1s;
+  margin: 5px;
+  border: 1px solid black;
+  float: left;
+  width: 90px;
+}
+
+body .container .page .section__article .cityGameImages .cityGameImg:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+body .container .page .section__article .cityGameImages .cityGameImg.mobileImg {
+  height: 100%;
+}
+
+body .container .page .section__article .cityGameImages .modalCityGame {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+body .container .page .section__article .cityGameImages .modalCityGame .closeCityGame {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+body .container .page .section__article .cityGameImages .modalCityGame .closeCityGame:hover,
+body .container .page .section__article .cityGameImages .modalCityGame .closeCityGame:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body .container .page .section__article .cityGameImages .modalCityGame .cityGameModal-content {
+  margin: auto;
+  display: block;
+  width: 85%;
+  max-width: 950px;
+}
+
+@media only screen and (max-width: 700px) {
+  body .container .page .section__article .cityGameImages .modalCityGame .cityGameModal-content {
+    width: 100%;
+  }
+}
+
+body .container .page .section__article .cityGameImages .modalCityGame .cityGameModal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+body .container .page .section__footer {
+  margin-bottom: -30vh;
+  min-height: 30vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray;
+  color: black;
+  text-align: center;
+  font-family: "Starjedi";
+  border-top: 2px solid black;
+}
+
+body .container .page .section__footer--item {
+  position: relative;
+  padding: 15px;
+  flex: 50%;
+}
+
+body .container .page .section__footer--item .item-text-findMe {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+body .container .page .section__footer--item .item__column {
+  display: flex;
+}
+
+body .container .page .section__footer--item .item__column--data {
+  font-size: 20px;
+  margin-top: 10px;
+  line-height: 21px;
+}
+
+body .container .page .section__footer--item .item__column--data .data__link {
+  text-decoration: none;
+  color: black;
+}
+
+body .container .page .section__footer--item .item__column--data .data__link:hover {
+  opacity: 0.9;
+  background: none;
+}
+
+body .container .page .section__footer--item .item__column--data .data__link i {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+body .container .page .section__footer--item .item__column--data .data__link i:hover {
+  text-shadow: 0px 0px 15px blue;
+}
+
+body .container .page .section__footer--item .social-links {
+  display: flex;
+  height: 10vh;
+  align-items: center;
+}
+
+body .container .page .section__footer--item .social-links a {
+  width: 7vh;
+  padding: 20px;
+  line-height: 5.5vh;
+  font-size: 5vh;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  margin: auto;
+  overflow: hidden;
+  transition: border 2s;
+  text-shadow: 1px 1px 1px #000000;
+}
+
+body .container .page .section__footer--item .social-links a:hover {
+  font-size: 5.5vh;
+  text-shadow: 7px 7px 4px #141414;
+}
+
+body .container .page .section__footer--row p {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+}
+
+body .container .page .bg0 {
+  background-color: black;
+  vertical-align: middle;
+  text-align: center;
+  background-image: url("/Portfolio/dist/img/main/priv1.jpg");
+  background-size: 35%;
+}
+
+body .container .page .bg1 {
+  background-image: url("/Portfolio/dist/img/main/lego1.jpg");
+}
+
+body .container .page .bg2 {
+  background-image: url("/Portfolio/dist/img/main/lego2.jpg");
+}
+
+body .container .page .bg3 {
+  background-image: url("/Portfolio/dist/img/main/lego4.jpg");
+}
+
+body .container .page .bg4 {
+  background-image: url("/Portfolio/dist/img/main/lego3.jpg");
+}

@@ -1,0 +1,113 @@
+[{
+        "name": "html",
+        "percentage": 48,
+        "description": "regular",
+        "color": "#ff6600",
+        "imgSrc": "/Portfolio/dist/img/skills/html.png"
+    },
+    {
+        "name": "css",
+        "percentage": 48,
+        "description": "regular",
+        "color": "#0066ff",
+        "imgSrc": "/Portfolio/dist/img/skills/css.png"
+    },
+    {
+        "name": "sass",
+        "percentage": 32,
+        "description": "junior",
+        "color": "#ff66cc",
+        "imgSrc": "/Portfolio/dist/img/skills/sass.png"
+    },
+    {
+        "name": "bootstrap",
+        "percentage": 32,
+        "description": "junior",
+        "color": "#9933ff",
+        "imgSrc": "/Portfolio/dist/img/skills/bootstrap.png"
+    },
+    {
+        "name": "jQuery",
+        "percentage": 32,
+        "description": "junior",
+        "color": "#3399ff",
+        "imgSrc": "/Portfolio/dist/img/skills/jquery.png"
+    },
+    {
+        "name": "JavaScript",
+        "percentage": 48,
+        "description": "regular",
+        "color": "#ff9933",
+        "imgSrc": "/Portfolio/dist/img/skills/js.png"
+    },
+    {
+        "name": "React",
+        "percentage": 16,
+        "description": "trainee",
+        "color": "#ff0000",
+        "imgSrc": "/Portfolio/dist/img/skills/react.png"
+    },
+    {
+        "name": "node.js",
+        "percentage": 16,
+        "description": "trainee",
+        "color": "#00cc00",
+        "imgSrc": "/Portfolio/dist/img/skills/node.png"
+    },
+    {
+        "name": "git",
+        "percentage": 32,
+        "description": "junior",
+        "color": "#ff3300",
+        "imgSrc": "/Portfolio/dist/img/skills/git.png"
+    },
+    {
+        "name": "visual studio code",
+        "percentage": 48,
+        "description": "regular",
+        "color": "#33ccff",
+        "imgSrc": "/Portfolio/dist/img/skills/vsc.png"
+    },
+    {
+        "name": "webpack",
+        "percentage": 32,
+        "description": "junior",
+        "color": "#3399ff",
+        "imgSrc": "/Portfolio/dist/img/skills/webpack.png"
+    },
+    {
+        "name": "csharp",
+        "percentage": 32,
+        "description": "junior",
+        "color": "#cc66ff",
+        "imgSrc": "/Portfolio/dist/img/skills/csharp.png"
+    },
+    {
+        "name": ".NET",
+        "percentage": 32,
+        "description": "junior",
+        "color": "#33ccff",
+        "imgSrc": "/Portfolio/dist/img/skills/net.png"
+    },
+    {
+        "name": "wordpress",
+        "percentage": 48,
+        "description": "regular",
+        "color": "#0000FF",
+        "imgSrc": "/Portfolio/dist/img/skills/wp.png"
+    },
+    {
+        "name": "SQL",
+        "percentage": 32,
+        "description": "junior",
+        "color": "#993333",
+        "imgSrc": "/Portfolio/dist/img/skills/sql.png"
+    },
+    {
+        "name": "java",
+        "percentage": 16,
+        "description": "trainee",
+        "color": "#cc0000",
+        "imgSrc": "/Portfolio/dist/img/skills/java.jpg"
+    }
+]
